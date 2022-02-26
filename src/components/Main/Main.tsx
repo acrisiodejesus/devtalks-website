@@ -12,7 +12,7 @@ const Main = () => {
         setTimeout(() => (elemento.innerHTML += letra), 75 * i);
       });
     }
-    typeWriter(typewriter.current);
+    if (typewriter.current) typeWriter(typewriter.current);
   }, [typewriter]);
 
   return (
@@ -27,7 +27,7 @@ const Main = () => {
             melhores desenvolvedores Mocambicanos e de fora dos pais! Porque a
             programação e o nosso forte e nos somos uma familia!
           </p>
-          <Link href={''}>Conheca os eventos</Link>
+          <Link href={'/eventos'}>Conheca os eventos</Link>
         </span>
       </div>
     </MainStyle>

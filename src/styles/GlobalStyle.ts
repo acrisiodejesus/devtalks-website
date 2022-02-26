@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -57,3 +57,13 @@ p {
   padding: 0.6rem;
   }
 `;
+
+export const animeLeft = keyframes`
+from {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+to {
+    opacity: 1;
+  transform: translateY(0);
+}`;

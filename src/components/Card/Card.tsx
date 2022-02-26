@@ -18,17 +18,19 @@ const LI = styled.li`
   }
 `;
 type EventsProps = {
+  key: number;
   title: string;
   author: string;
   category: string;
   image: string;
 };
-const Card = ({ title, author, category, image }: EventsProps) => {
+const Card = ({ title, author, key, image }: EventsProps) => {
+  console.log(image);
   return (
-    <LI>
-      <Image src={`/${image}`} alt='image' width={800} height={250} />
+    <LI key={key}>
+      <Image src={`${image}`} alt='image' width={800} height={250} />
       <h3>
-        <strong>{category}</strong> - {title}
+        <strong></strong> - {title}
       </h3>
       <p>Por: {author}</p>
     </LI>

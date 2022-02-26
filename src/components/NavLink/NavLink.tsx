@@ -6,10 +6,10 @@ const NavLink = () => {
   return (
     <NavLiks>
       <li>
-        <Link href='eventos'>Eventos</Link>
+        <Link href='/eventos'>Eventos</Link>
       </li>
       <li>
-        <Link href='sobre'>Sobre</Link>
+        <Link href='/sobre'>Sobre</Link>
       </li>
     </NavLiks>
   );

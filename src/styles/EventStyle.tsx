@@ -1,9 +1,12 @@
 import styled from 'styled-components';
+import { animeLeft } from './GlobalStyle';
 type Toogle = {
-  toogle: Boolean;
+  show: Boolean;
 };
 
 export const EventContainer = styled.div`
+  animation: 0.6s ${animeLeft};
+  color: white;
   max-width: 700px;
   width: 100%;
   margin: 1rem auto;
@@ -35,7 +38,7 @@ export const Btn = styled.button<Toogle>`
   width: 100%;
   border: none;
   border-radius: 4px;
-  background: ${(props) => (props.toogle ? '#81b936' : '#2d2d2e')};
+  background: ${(props) => (props.show ? '#60ba1e' : '#2d2d2e')};
   color: white;
   cursor: pointer;
   margin: 0.6rem 0;

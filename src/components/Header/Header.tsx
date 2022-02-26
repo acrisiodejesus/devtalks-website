@@ -10,12 +10,14 @@ const Header = () => {
       <div className='container'>
         <nav>
           <Link href='/'>
-            <Image
-              src='/Logo.svg'
-              width='120'
-              height='26'
-              alt='DevTalksMz Logo'
-            />
+            <a>
+              <Image
+                src='/Logo.svg'
+                width='120'
+                height='26'
+                alt='DevTalksMz Logo'
+              />
+            </a>
           </Link>
           <NavLink />
         </nav>
