@@ -1,14 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
+import { EventsProps } from '../../pages/eventos';
 
 const LI = styled.li`
   color: white;
   margin: 3rem 0;
   h3 {
     margin: 1rem 0;
+    color: whitesmoke;
     strong {
-      color: #81b936;
+      background: #81b936 !important;
     }
   }
   img {
@@ -17,22 +19,22 @@ const LI = styled.li`
     border-radius: 0.3rem;
   }
 `;
-type EventsProps = {
-  key: number;
-  title: string;
-  author: string;
-  category: string;
-  image: string;
-};
-const Card = ({ title, author, key, image }: EventsProps) => {
-  console.log(image);
+
+interface ItemProps {
+  item: EventsProps
+}
+
+const Card = ({ item }: ItemProps, key: number) => {
   return (
     <LI key={key}>
-      <Image src={`${image}`} alt='image' width={800} height={250} />
-      <h3>
-        <strong></strong> - {title}
-      </h3>
-      <p>Por: {author}</p>
+
+      <a href={item.link}>
+        <Image src={`${item.image?.url}`} alt='image' width={800} height={500} />
+        <h3>
+          <strong></strong> - {item.title}
+        </h3>
+      </a>
+
     </LI>
   );
 };
