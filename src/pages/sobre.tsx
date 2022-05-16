@@ -34,6 +34,7 @@ const Sobre: () => JSX.Element = () => {
             nome='Acrisio de Jesus'
             prof='Desenvolvedor Frontend e Mobile'
             description='Fundador da Seja Criativo, intusiasta de tecnologia'
+            height={300}
           />
           <Members
             src='/0.jpg'

@@ -7,16 +7,17 @@ type Member = {
   prof: string;
   description: string;
   src: string;
+  height?: number;
 };
 
-const Members = ({ nome, prof, description, src }: Member) => {
+const Members = ({ nome, prof, description, src, height }: Member) => {
   return (
     <MemberStyle>
       <Image
         src={src}
         alt='imagem perfil'
         width={300}
-        height={400}
+        height={height? height : 300}
         className='profile'
       />
       <div className='content'>
