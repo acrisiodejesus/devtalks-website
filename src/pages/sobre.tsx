@@ -30,10 +30,10 @@ const Sobre: () => JSX.Element = () => {
         <section>
           <h3>Membros</h3>
           <Members
-            src='/0.jpg'
+            src='/1.jpg'
             nome='Acrisio de Jesus'
             prof='Desenvolvedor Frontend e Mobile'
-            description='SEO na empresa "Seja criativo" entusiasta de tecnologia '
+            description='Fundador da Seja Criativo, intusiasta de tecnologia'
           />
           <Members
             src='/0.jpg'
